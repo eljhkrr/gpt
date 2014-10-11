@@ -1,0 +1,199 @@
+.header-section{
+	background-image: url(../images/bg.png);
+	height: 500px;
+}
+
+.header-section img {
+	#height: 150px;
+	display: block;
+	#width: 200px;
+	margin: 0 auto;
+	margin-top: 100px;
+	border: 1px solid #ddd;
+	background: rgba(255, 255, 255, 0.8);
+	padding: 15px;
+	border-radius: 20%;
+}
+
+.header-section .slogan {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	#height: 50px;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	text-transform: capitalize;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-section .glyphicon{
+	font-size: 45px;
+	display: block;
+	margin: 0 auto;
+}
+
+.header-section ul li{
+	margin: 10px;
+	font-weight: bold;
+}
+
+.header-section ul li .btn{
+	border-radius: 0;
+}
+
+hr.star-light{
+	margin: 25px auto 30px;
+	padding: 0;
+	max-width: 250px;
+	border: 0;
+	border-top: solid 5px #888;
+	text-align: center;
+}
+
+hr.star-light:after{
+	content: "\f005";
+	display: inline-block;
+	position: relative;
+	top: -.8em;
+	padding: 0 .25em;
+	font-family: FontAwesome;
+	font-size: 2em;
+	background-color: #f3f9ec;
+	color: #888;
+}
+
+.section-courses{
+	background-color: #f3f9ec;
+	padding: 30px 0;
+}
+
+.heading{
+	#margin-bottom: 50px;
+	text-transform: uppercase;
+	color: #5c5c5c;
+	text-align: center;
+}
+
+.section-courses .heading{
+	
+	
+}
+
+.section-courses .thumbnail{
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.section-about{
+	text-align: center;
+	background-color: #f7f5e8;
+}
+
+.section-about form{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+
+}
+
+.section-about form input, .section-about form textarea{
+	width: 100%;
+	box-shadow: none;
+	font-size: 1.5em;
+	border: 0;
+	background: 0;
+	border-top: 1px solid #ddd;
+	border-radius: 0;
+	#margin: 5px 0;
+	#height: 3em;
+}
+
+.section-about form h3{
+	margin-top: 5px;
+}
+footer{
+	text-align: center;
+	background-color: #080808;
+	#height: 150px;
+	padding-top: 50px;
+	color: #212121;
+}
+
+footer .footer-lead{
+	font-size: 35px;
+	color: #999;
+}
+
+footer ul li{
+	
+	display: inline;
+	font-size: 2em;
+	margin: 10px;
+	
+}
+
+footer ul li .fa{
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	border: 1px solid #999;
+	border-radius: 100%;
+	color: #999;
+}
+
+footer ul li .fa.fa-twitter:hover{
+	background-color: #00aced;
+	text-decoration: none;
+	color: #fff;
+}
+
+footer ul li .fa.fa-facebook:hover{
+	background-color: #3B5998;
+	text-decoration: none;
+	color: #fff;
+}
+.blue{
+	color: #3c74a9;
+}
+
+.green{
+	color: #49a69e;
+}
+
+.orange{
+	color: #f3ad29;
+}
+
+.red{
+	color: #dc5130;
+}
+
+.modal-header {
+	text-align: center;
+	border-bottom: 0;
+	color: #555;
+}
+
+.modal-footer {
+	border-top: 0;
+}
+
+.modal-dialog hr{
+	margin: 0;
+}
+
+.tab-pane{
+	padding: 20px 0;
+	text-align: justify;
+}
+
+.nav-tabs{
+	#font-weight: bold;
+}
+
+.cta{
+	font-size: 1.4em;
+
+}

@@ -1,6 +1,10 @@
 var app = angular.module("myApp", ['ui.bootstrap']);
 
-app.controller("AppController", function($scope, $modal, $log){
+app.controller("AppController", ['$scope', '$modal', '$log', function($scope, $modal, $log){
+
+	$scope.status = {
+		isopen: false
+	};
 	
 	$scope.open = function (size, templateFile) {
 
@@ -22,25 +26,20 @@ app.controller("AppController", function($scope, $modal, $log){
 	    });
 	};
 
-	$scope.openBusiness = function(){
-		$scope.open('lg', 'business.html');
+	
+	$scope.openAbout = function(){
+		$scope.open('lg', 'about.html');
 	};
 
-	$scope.openSecretarial = function(){
-		$scope.open('lg', 'secretarial.html');
+	$scope.toggleDropdown = function($event) {
+		$event.preventDefault();
+		$event.stopPropagation();
+		$scope.status.isopen = !$scope.status.isopen;
 	};
 
-	$scope.openICT = function(){
-		$scope.open('lg', 'ict.html');
-	};
+}]);
 
-	$scope.openLanguages = function(){
-		$scope.open('lg', 'languages.html');
-	};
-
-});
-
-app.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
+app.controller('ModalInstanceCtrl', ['$scope', '$modalInstance', function ($scope, $modalInstance) {
 
   $scope.ok = function () {
     $modalInstance.close($scope.selected.item);
@@ -49,4 +48,4 @@ app.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
   $scope.cancel = function () {
     $modalInstance.dismiss('cancel');
   };
-});
+}]);

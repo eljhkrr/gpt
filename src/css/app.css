@@ -63,6 +63,58 @@ hr.star-light:after{
 	color: #888;
 }
 
+hr.modal-star-light{
+	margin: 25px auto 0;
+	padding: 0;
+	max-width: 250px;
+	border: 0;
+	border-top: solid 5px #888;
+	text-align: center;
+}
+
+hr.modal-star-light:after{
+	content: "\f005";
+	display: inline-block;
+	position: relative;
+	top: -.8em;
+	padding: 0 .25em;
+	font-family: FontAwesome;
+	font-size: 2em;
+	background-color: #fff;
+	color: #888;
+}
+
+hr.short-line{
+	margin: 5px auto 5px;
+	padding: 0;
+	max-width: 250px;
+	border: 0;
+	border-top: solid 2px rgba(136, 136, 136, 0.1);
+	text-align: center;
+}
+
+hr.course-star-light{
+	margin: 25px auto 60px;
+	padding: 0;
+	max-width: 250px;
+	border: 0;
+	border-top: solid 5px #888;
+	text-align: center;
+}
+
+hr.course-star-light:after{
+	content: "\f005";
+	display: inline-block;
+	position: relative;
+	top: -.8em;
+	padding: 0 .25em;
+	font-family: FontAwesome;
+	font-size: 2em;
+	background-color: #fff;
+	color: #888;
+}
+
+
 .section-courses{
 	background-color: #f3f9ec;
 	padding: 30px 0;
@@ -181,7 +233,7 @@ footer ul li .fa.fa-facebook:hover{
 }
 
 .modal-dialog hr{
-	margin: 0;
+	#margin: 0;
 }
 
 .tab-pane{
@@ -196,4 +248,66 @@ footer ul li .fa.fa-facebook:hover{
 .cta{
 	font-size: 1.4em;
 
+}
+
+img.full-image{
+	height:100%;
+	width:100%;
+	padding: 10px;
+	border-right: 1px solid #ddd;
+}
+
+.course-slide{
+	padding: 20px;
+}
+
+.section-course-slides{
+	#background-color: #eee;
+	#padding-bottom: 50px;
+	padding: 15px;
+	border-bottom: 3px dashed green;
+}
+
+.course-objectives-spacing{
+	border-right: 1px solid black;
+}
+
+.carousel-inner>.active{
+	padding-bottom: 50px
+}
+
+.carousel-control{
+	#visibility: hidden;
+}
+
+.center-element{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.clearfloat{
+	float: none;
+}
+
+.margin-top-bottom-10{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.course-nav{
+	list-style: none;
+}
+
+.course-nav li{
+	display: inline-block;
+	margin: 0 10px 10px;
+}
+
+#all-courses-button{
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	float: right;
 }

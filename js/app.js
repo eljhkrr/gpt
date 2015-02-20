@@ -1,1 +1,51 @@
-var app=angular.module("myApp",["ui.bootstrap"]);app.controller("AppController",function(n,e,t){n.open=function(o,l){var c=e.open({templateUrl:l,controller:"ModalInstanceCtrl",size:o,resolve:{items:function(){return n.items}}});c.result.then(function(e){n.selected=e},function(){t.info("Modal dismissed at: "+new Date)})},n.openBusiness=function(){n.open("lg","business.html")},n.openSecretarial=function(){n.open("lg","secretarial.html")},n.openICT=function(){n.open("lg","ict.html")},n.openLanguages=function(){n.open("lg","languages.html")}}),app.controller("ModalInstanceCtrl",function(n,e){n.ok=function(){e.close(n.selected.item)},n.cancel=function(){e.dismiss("cancel")}});
+var app = angular.module("myApp", ['ui.bootstrap']);
+
+app.controller("AppController", ['$scope', '$modal', '$log', function($scope, $modal, $log){
+
+	$scope.status = {
+		isopen: false
+	};
+	
+	$scope.open = function (size, templateFile) {
+
+	    var modalInstance = $modal.open({
+	      templateUrl: templateFile,
+	      controller: 'ModalInstanceCtrl',
+	      size: size,
+	      resolve: {
+	        items: function () {
+	          return $scope.items;
+	        }
+	      }
+	    });
+
+	    modalInstance.result.then(function (selectedItem) {
+	      $scope.selected = selectedItem;
+	    }, function () {
+	      $log.info('Modal dismissed at: ' + new Date());
+	    });
+	};
+
+	
+	$scope.openAbout = function(){
+		$scope.open('lg', 'about.html');
+	};
+
+	$scope.toggleDropdown = function($event) {
+		$event.preventDefault();
+		$event.stopPropagation();
+		$scope.status.isopen = !$scope.status.isopen;
+	};
+
+}]);
+
+app.controller('ModalInstanceCtrl', ['$scope', '$modalInstance', function ($scope, $modalInstance) {
+
+  $scope.ok = function () {
+    $modalInstance.close($scope.selected.item);
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+}]);

@@ -26,12 +26,12 @@
   <body ng-controller="AppController">
     <div class="container-fluid">
         <section class="row header-section">
-            <ul class="nav nav-pills pull-left">
+            <ul class="nav nav-pills pull-right">
             	
                 <li>
                 	
                 	<div dropdown is-open="status.isopen">
-	            	<a href class="btn btn-default" dropdown-toggle>Courses <i class="fa fa-chevron-circle-down"></i></a>
+	            	<a href class="btn btn-default" dropdown-toggle><strong>Courses</strong> <i class="fa fa-chevron-down"></i></a>
 	            	<ul class="dropdown-menu">
 	            		<li><a href="#business">Business</a></li>
 	            		<li><a href="#ict">ICT</a></li>
@@ -42,7 +42,7 @@
 	            	</ul>	
 	            	</div>
                 </li>
-                <li><a href class="text-muted" ng-click="openAbout()">About</a></li>
+                <li><a href ng-click="openAbout()" class="btn btn-link"><strong>About us</strong></a></li>
                 
             </ul>
 
@@ -64,18 +64,18 @@
             <div class="modal-body text-left">
 
             	<div class="row">
-	            	<div class="col-md-6">
-	            	<br><br>
-	            		<img src="images/gpt_logo.svg" class="full-image">
+	            	<div class="col-md-6 hidden-xs">
+                        <br><br>
+	            		<img src="images/gpt_logo.svg" class="full-image img-responsive">
 	            	</div>
-	            	<div class="col-md-6">
+	            	<div class="col-md-6 col-xs-12">
 	            		<p> 
 							Gladpoint college of business studies was established with a view of providing affordable and quality education services for those with an interest in the world of business. The college has qualified, experienced and dedicated staff who are ready to assist the students whenever need arises.The college has a well equiped typing pool and computerlab. We prepare students for KNEC, PITMAN, ICM, KASNEB, CSK and GBC examinations.
 						</p>
 						
 						<h3 class="text-center">Mission</h3>
 						<hr class="short-line">
-						<p>To eradicate business illiteracy by providing affordable and quality business in the wav of technological advances.</p>
+						<p>To eradicate business illiteracy by providing affordable and quality business in the wave of technological advances.</p>
 						
 						<h3 class="text-center">Vision</h3>
 						<hr class="short-line">
@@ -100,13 +100,13 @@
         </script>
 
         
-        <section class="row section-courses" id="courses">
-            <h2 class="heading">Courses</h2>
-            <hr class="star-light">
+        <section class="row section-courses hidden-xs" id="courses">
+            <h2 class="heading font-white">Courses</h2>
+            <hr class="course-star-light">
             <div class="col-md-2"></div>
             <div class="col-md-2">
                 <div class="thumbnail">
-                    <img src="images/page1-img1.jpg">
+                    <img src="images/page1-img1.jpg" class="img-responsive">
                     <div class="caption">
                         <h2 class="blue">Business</h2>
                         <hr>
@@ -150,13 +150,13 @@
             <div class="col-md-2"></div>
         </section>
 
-        <section class="row section-course-slides" id="business">
+        <section class="row section-course-slides bg-blue" id="business">
             <div class="col-md-12">
                 <h2 class="heading">Business courses</h2>
-                <hr class="course-star-light">
+                <hr class="business-star-light">
                 <div class="col-md-6 col-xs-12 clearfloat center-block text-center">
                     <h3 class="">Objectives of our business programs:</h3>
-                    <ul class="margin-top-bottom-10 fa-ul">
+                    <ul class="margin-top-5-bottom-10 fa-ul">
                         <li><i class="fa fa-check-circle text-success"></i> Prepare students with the necessary business communication skills.</li>
                         <hr class="short-line">
                         <li><i class="fa fa-check-circle text-success"></i> To foster a student thinking and problem solving skills and thus promote entrepreneurial initiative.</li>
@@ -169,29 +169,28 @@
 
                 <ul class="course-nav text-center">
                     <p>Examination Board sites</p>
-                    <li><a href="" class="btn btn-default" target="_blank">Accounting Technician Cerftificate <i class="fa fa-external-link"></i></a></li>
-                    <li><a href="" class="btn btn-default" target="_blank">Certified Public Accountant <i class="fa fa-external-link"></i></a></li>
-                    <li><a href="" class="btn btn-default" target="_blank">Business Management <i class="fa fa-external-link"></i></a></li>
+                    <li><a href="http://kasneb.or.ke/index.php?option=com_content&view=article&id=49&Itemid=37" class="btn btn-default" target="_blank">Accounting Technician Cerftificate <i class="fa fa-external-link"></i></a></li>
+                    <li><a href="http://kasneb.or.ke/index.php?option=com_content&view=article&id=53&Itemid=41" class="btn btn-default" target="_blank">Certified Public Accountant <i class="fa fa-external-link"></i></a></li>
+                    <li><a href="http://icm.education/single-subject-diplomas/business-management-administration/" class="btn btn-default" target="_blank">Business Management <i class="fa fa-external-link"></i></a></li>
                 </ul>
 
-                <div class="text-center text-success">
-                    <i class="fa fa-phone"></i> Call +254 721 754 768 to reserve your place!
-                </div>
+                
             </div>
             
         </section>
 
-        <section class="row section-course-slides" id="front-office">
+        <section class="row section-course-slides bg-plain" id="front-office">
             <div class="col-md-12">
                 <h2 class="heading">Front-Office courses</h2>
-                <hr class="course-star-light">
+                <hr class="fo-star-light">
                 
-                <div class="col-md-6 col-xs-12 clearfloat center-block text-center">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 clearfloat center-block text-center">
                     <p>
                         Gladpoint College offers courses that seek to produce qualified front-office personnel. Every organization will always have the front office and thus the need to give an exceptionally good impression of the organization especially for first time visitors.
                     </p>
                     <h3 class="">Objectives of our front-office programs:</h3>
-                    <ul class="margin-top-bottom-10 fa-ul">
+                    <ul class="margin-top-5-bottom-10 fa-ul">
                         <li><i class="fa fa-check-circle text-success"></i> Impart the necessary knowledge to a student to introduce them to office operations</li>
                         <hr class="short-line">
                         <li><i class="fa fa-check-circle text-success"></i> Produce graduates who can excellently serve in diverse companies
@@ -201,64 +200,49 @@
                         
                     </ul>
                 </div>
-
-                <ul class="course-nav text-center">
-                    <p>Examination Board sites</p>
-                    <li><a href="" class="btn btn-default" target="_blank">Secretarial Studies <i class="fa fa-external-link"></i></a></li>
-                    
-                </ul>
-
-                <div class="text-center text-success">
-                    <i class="fa fa-phone"></i> Call +254 721 754 768 to reserve your place!
                 </div>
+
+                
             </div>
             
         </section>
 
-        <section class="row section-course-slides" id="ict">
+        <section class="row section-course-slides bg-skyblue" id="ict">
             <div class="col-md-12">
                 <h2 class="heading">ict courses</h2>
-                <hr class="course-star-light">
+                <hr class="ict-star-light">
                 
                 <div class="col-md-6 col-xs-12 clearfloat center-block text-center">
                     <p>
-                        Information and communication technology is a vital resource to all sectors in the current society. Both the private and public centre relies on ICT since it involves collection, processing, storage, and dissemination of data and information. The college trains theoretical, practical and technical aspects of ICT that are satisfactorily geared towards helping our students support and manage information systems. The ICT sector is fast growing and penetrating into all sectors of the economy. The world is becoming a global village because of ICT. As such nearly all activities depend on information technology. Because of its dynamic and complex nature and including issues arising from the use of ICT, skilled personnel are continually needed. People who will rise to become experts in the ICT field stand chance in the current market.
+                        Information and communication technology is a vital resource to all sectors in the current society. Gladpoint college trains on the theoretical, practical and technical aspects of ICT that are satisfactorily geared towards helping our students manage information systems. Because of the dynamic and complex nature of ICT, skilled personnel are continually needed.
                     </p>
                     <h3 class="">Objectives of our ICT programs:</h3>
-                    <ul class="margin-top-bottom-10 fa-ul">
+                    <ul class="margin-top-5-bottom-10 fa-ul">
                         <li><i class="fa fa-check-circle text-success"></i> Empower learners with both theoretical and practical skills in an integrated manner and improve their problem solving skills.</li>
                         <hr class="short-line">
-                        <li><i class="fa fa-check-circle text-success"></i> Impart practical business skills to students that will help them start and run ICT Based business.
+                        <li><i class="fa fa-check-circle text-success"></i> Impart practical business skills to students that will help them start and run ICT-based businesses.
                         </li>
                         
                         
                     </ul>
                 </div>
 
-                <ul class="course-nav text-center">
-                    <p>Examination Board sites</p>
-                    <li><a href="" class="btn btn-default" target="_blank">ICT Studies <i class="fa fa-external-link"></i></a></li>
-                    
-                </ul>
-
-                <div class="text-center text-success">
-                    <i class="fa fa-phone"></i> Call +254 721 754 768 to reserve your place!
-                </div>
+                
             </div>
             
         </section>
 
-        <section class="row section-course-slides" id="languages">
+        <section class="row section-course-slides bg-purple" id="languages">
             <div class="col-md-12">
                 <h2 class="heading">language courses</h2>
-                <hr class="course-star-light">
+                <hr class="language-star-light">
                 
                 <div class="col-md-6 col-xs-12 clearfloat center-block text-center">
                     <p>
-                        The world comprises of many languages that are a primary means of communication in all aspects of life. With  globalization , people from different regions often meet and interact. This department comes in handy in training different languages including French, German, English, Swahili, and others.
+                        With  globalization, people from different regions of the world often need to interact. Gladpoint offers training in different languages including French, German, English, Swahili, and others.
                     </p>
                     <h3 class="">Objectives of our language programs:</h3>
-                    <ul class="margin-top-bottom-10 fa-ul">
+                    <ul class="margin-top-5-bottom-10 fa-ul">
                         <li><i class="fa fa-check-circle text-success"></i> Empower learners with essential business communication skills</li>
                         <hr class="short-line">
                         <li><i class="fa fa-check-circle text-success"></i> Impart basic culture skills associated with the origin of the language
@@ -268,9 +252,7 @@
                     </ul>
                 </div>
 
-                <div class="text-center text-success">
-                    <i class="fa fa-phone"></i> Call +254 721 754 768 to reserve your place!
-                </div>
+                
             </div>
             
         </section>
@@ -279,7 +261,11 @@
                
         <footer class="row">
             <div class="footer-container col-md-12">
-                <p class="footer-lead">Gladpoint Business College <i class="fa fa-cc fa-4x"></i></p>
+                <p class="footer-lead">Gladpoint Business College</p>
+                <div class="text-center text-success lead">
+                    <i class="fa fa-phone"></i> +254 721 754 768
+                </div>
+                <p>Maryann Complex, 1st Flr, Kasarani, Kenya</p>
                 <p>Accredited by The Ministry of Higher Education, Science and Technology in The Republic of Kenya</p>
                 <p>Registration No. MOHEST/PC/1796/012</p>
                 <ul>
@@ -292,4 +278,14 @@
     </div>
       
   </body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59967607-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </html>

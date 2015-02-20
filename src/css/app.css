@@ -80,7 +80,7 @@ hr.modal-star-light:after{
 	padding: 0 .25em;
 	font-family: FontAwesome;
 	font-size: 2em;
-	background-color: #fff;
+	background-color: #fafafa;
 	color: #888;
 }
 
@@ -98,7 +98,7 @@ hr.course-star-light{
 	padding: 0;
 	max-width: 250px;
 	border: 0;
-	border-top: solid 5px #888;
+	border-top: solid 5px #fff;
 	text-align: center;
 }
 
@@ -110,14 +110,98 @@ hr.course-star-light:after{
 	padding: 0 .25em;
 	font-family: FontAwesome;
 	font-size: 2em;
-	background-color: #fff;
+	background-color: #0f192e;
+	color: #fff;
+}
+
+hr.business-star-light{
+	margin: 25px auto 60px;
+	padding: 0;
+	max-width: 250px;
+	border: 0;
+	border-top: solid 5px #888;
+	text-align: center;
+}
+
+hr.business-star-light:after{
+	content: "\f0f7";
+	display: inline-block;
+	position: relative;
+	top: -.8em;
+	padding: 0 .25em;
+	font-family: FontAwesome;
+	font-size: 2em;
+	background-color: #f1f6fb;
 	color: #888;
 }
 
+hr.fo-star-light{
+	margin: 25px auto 60px;
+	padding: 0;
+	max-width: 250px;
+	border: 0;
+	border-top: solid 5px #888;
+	text-align: center;
+}
+
+hr.fo-star-light:after{
+	content: "\f0b1";
+	display: inline-block;
+	position: relative;
+	top: -.8em;
+	padding: 0 .25em;
+	font-family: FontAwesome;
+	font-size: 2em;
+	background-color: #fafcf6;
+	color: #888;
+}
+
+hr.ict-star-light{
+	margin: 25px auto 60px;
+	padding: 0;
+	max-width: 250px;
+	border: 0;
+	border-top: solid 5px #888;
+	text-align: center;
+}
+
+hr.ict-star-light:after{
+	content: "\f0c2";
+	display: inline-block;
+	position: relative;
+	top: -.8em;
+	padding: 0 .25em;
+	font-family: FontAwesome;
+	font-size: 2em;
+	background-color: #ECF7F7;
+	color: #888;
+}
+
+hr.language-star-light{
+	margin: 25px auto 60px;
+	padding: 0;
+	max-width: 250px;
+	border: 0;
+	border-top: solid 5px #888;
+	text-align: center;
+}
+
+hr.language-star-light:after{
+	content: "\f0e6";
+	display: inline-block;
+	position: relative;
+	top: -.8em;
+	padding: 0 .25em;
+	font-family: FontAwesome;
+	font-size: 2em;
+	background-color: #f8f4fc;
+	color: #888;
+}
 
 .section-courses{
-	background-color: #f3f9ec;
-	padding: 30px 0;
+	background-color: #0f192e;
+	#padding: 30px 0 50px;
+	#margin-bottom: 30px;
 }
 
 .heading{
@@ -264,8 +348,8 @@ img.full-image{
 .section-course-slides{
 	#background-color: #eee;
 	#padding-bottom: 50px;
-	padding: 15px;
-	border-bottom: 3px dashed green;
+	#padding: 15px;
+	#border-bottom: 3px dashed green;
 }
 
 .course-objectives-spacing{
@@ -289,8 +373,8 @@ img.full-image{
 	float: none;
 }
 
-.margin-top-bottom-10{
-	margin-top: 10%;
+.margin-top-5-bottom-10{
+	margin-top: 5%;
 	margin-bottom: 10%;
 }
 
@@ -311,3 +395,35 @@ img.full-image{
 	font-weight: bolder;
 	float: right;
 }
+
+section{
+	font-size: 1.2em;
+	#padding-bottom: 30px;
+}
+
+.modal-content{
+	font-size: 1.1em;
+	border-radius: 0;
+	background: #fafafa;
+}
+
+.bg-blue{
+	background-color: #f1f6fb;
+}
+
+.bg-plain{
+	background-color: #fafcf6;
+}
+
+.bg-skyblue{
+	background-color: #ECF7F7;
+}
+
+.bg-purple{
+	background-color: #f8f4fc;
+}
+
+.font-white{
+	color: #fff;
+}
+/********* Responsive utilities ****************/
